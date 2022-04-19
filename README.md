@@ -1,15 +1,25 @@
-# An Analysis of Kickstarter Campaigns
-Analysis on Kickstarter data to uncover trends 
-## Findings
-Most theater kickstarter campaigns were successful, both in the US and Great Britain, particularly when the median goal was around $3,000.
-![Parent Category Outcomes](https://user-images.githubusercontent.com/101822948/163444337-a4e526f7-20b1-4bae-85f8-c16f983b04b6.png)
-![Subcategory Outcomes](https://user-images.githubusercontent.com/101822948/163444444-799b4869-dd7c-45cc-8d78-f853a6a6bf61.png)
+# Kickstarting with Excel
+## Overview of Project
+To examine the relation between theater campaign outcomes and their launch dates and play campaigns and their funding goals using Kickstarter data.
+### Purpose
+The purpose of the project is to provide information to the client that will allow her to determine when to launch her campaign and what goal to target in order to increase her odds of having a successful campaign. The client had requested additional information into different campaign outcomes based on their launch date and funding goals. 
+## Analysis and Challenges
+### Analysis of Outcomes Based on Launch Dates
+To visualize theater outcomes based on launch dates, we created a pivot table showing the number of successful, failed, and canceled campaigns by month based on all the included years in the provided Kickstarter data. We then plotted that information on a line graph to visualize the data and provide the client with useful information about when to best launch her campaign.  
+![Theater_Outcomes_vs_Launch png](https://user-images.githubusercontent.com/101822948/164038204-582a9b80-92b4-4eeb-b394-534fd26bebaa.png)
+### Analysis of Outcomes Based on Goals
+To analyze outcomes based on goals, we focused on the “Play” subcategory and pulled data from Kickstarter detailing how many successful, failed, and canceled campaigns there were based on goal ranges. The raw number of campaigns in each outcome was then converted to a percentage based on the total number of campaigns in a specific goal range, which was then plotted in a line graph to show the correlation between campaign outcomes and goal ranges.  
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/101822948/164038236-f58ba69a-8f90-4740-b46b-38e8c679a931.png)
+### Challenges and Difficulties Encountered
+While the client had requested information on the outcome of different campaigns based on launch date and goals, in this analysis we only focused on the Parent Category “theater” for the first analysis and the Subcategory “plays” for the latter. This likely provides Louise with more useful information for her own theater campaign, but does not exactly fit her request. In addition, while there was a correlation between successful outcomes and launch dates and target goals in the theater category, there remains plenty of unknown factors about what contributes to a successful outcome. Unfortunately, it is likely that many campaigns failed because of subjective measures like donors did not like the synopsis of a production. 
 
-Successful campaigns generally began in the first half of the calendar year, with May launch dates the most successful followed by June
-![Outcomes Based on Launch Date](https://user-images.githubusercontent.com/101822948/163444549-8e08085c-da54-42e1-9e17-603a1a5f2775.png)
+A factor that may have affected the Outcomes Based on Goals measures may have been the different currencies being used. The numbers should have been converted into one standard currency, but those values would have depended on the exchange rates during the campaign. Using contemporary exchange rates to convert the current to a standard unit is beyond my current skill level. However, using the objectives of the client and the Kickstarter information we were able to provide some data-based results that should give Louise with the knowledge of when to begin her campaign and what goal to target in order to have a successful campaign. 
+## Results
+Looking at the graphs in Outcomes Based on Launch date, it's clear most campaigns, regardless of outcome, began in May, June, July, and August (in that order). Overall, more theater campaigns succeeded regardless of launch month, except in December when failed and successful campaigns were near parity. Based on the analysis, however, one conclusion from this analysis is that campaigns launched in May, June, and July succeeded more than failed (the delta between the two outcomes was at the widest in May, followed by June, and then July). Another conclusion would be to avoid December launch dates since it was the least successful month to launch a successful campaign. 
 
-In the UK, the median goal was GBP 2,000, which was just outside the third quartile of pledges.
+From the Outcomes Based on Goals analysis, by looking at the graph it appears that Play campaigns under 20,000 and between 35,000 and 44,999 were over 50% successful and that Louise should target a goal of under 4,999 or between 35,000 and 44,9999 for the most successful outcome; however, there are too few campaigns to draw the conclusion that Louise should have a target goal of over 20,000. There were only 9 campaigns with goals between 35,000 and 44,999. There were 1,047 total Play campaigns, and 1,005 all had target goals of under 19,999 (with 534 of those campaigns with targets between 1,000 and 4,999). One conclusion that can be drawn from the data is that Louise would have a greater likelihood of success if her target was under 5,000. However, using percentages to visualize this data is misleading. In the future we would need to adjust for outliers.
 
-![British Musical Goals vs Pledged](https://user-images.githubusercontent.com/101822948/163448569-d4ecf0c2-8ce5-4f45-9940-b2ee2247a9ce.png)
-## Recommendations
-For a US theater kickstarter, launch your campaign by May or June. A goal of $3,000 is likely to be successful starting point. For the UK musical, a goal of GBP 2,000 shows solid success rates. 
+Another factor potentially impacting the results of the Outcomes Based on Goals is that the currency wasn’t standardized. GBP 5,000 is vastly different than USD 5,000 or CAD 5,000, particularly given fluctuating current exchange values. To better understand the relationship between Outcome and Goal we should have standardized the currency using contemporary exchange rates. This may have shifted some campaigns into higher or lower goal brackets and shown a truer view of the correlation between goal amounts and outcomes.
+
+Other graphs or charts that may provide the client with relevant information to guide her decision on when to launch her campaign and what goals to target include a box plot between goal and pledged for plays in the US and Great Britain. This would provide the client with more information on what goal to target using measures of tendency, measures of spread, and identification of outliers. Another chart that could be useful to the client is one that shows the number of backers and average donations for plays that are similar in scope or plot to the one she is proposing. 
+

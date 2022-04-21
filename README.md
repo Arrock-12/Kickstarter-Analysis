@@ -1,6 +1,6 @@
 # Kickstarting with Excel
 ## Overview of Project
-To examine the relation between theater campaign outcomes and their launch dates and play campaigns and their funding goals using Kickstarter data.
+To examine the relation between theater campaign outcomes and their launch dates; and play campaigns and their funding goals using Kickstarter data.
 ### Purpose
 The purpose of the project is to provide information to the client that will allow her to determine when to launch her campaign and what goal to target in order to increase her odds of having a successful campaign. The client had requested additional information into different campaign outcomes based on their launch date and funding goals. 
 ## Analysis and Challenges
